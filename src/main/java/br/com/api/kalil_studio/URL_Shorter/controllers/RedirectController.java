@@ -1,19 +1,11 @@
 package br.com.api.kalil_studio.URL_Shorter.controllers;
 
-import br.com.api.kalil_studio.URL_Shorter.models.URLModel;
 import br.com.api.kalil_studio.URL_Shorter.services.URLService;
-import org.springframework.boot.context.properties.bind.DefaultValue;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Optional;
-
 import static br.com.api.kalil_studio.URL_Shorter.utils.ConvertBase64.fromBase64;
-import static br.com.api.kalil_studio.URL_Shorter.utils.validURL.validURL;
+import static br.com.api.kalil_studio.URL_Shorter.utils.ValidURL.validURL;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -27,7 +19,7 @@ public class RedirectController {
     }
 
     @GetMapping("/{base64ID}")
-    public RedirectView getAllURL(@PathVariable(value = "base64ID") String base64ID) {
+    public RedirectView redirect(@PathVariable(value = "base64ID") String base64ID) {
         Long id;
         try {
             id = fromBase64(base64ID);
