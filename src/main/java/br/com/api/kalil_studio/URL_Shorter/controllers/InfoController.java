@@ -5,10 +5,8 @@ import br.com.api.kalil_studio.URL_Shorter.services.URLService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.view.RedirectView;
 
 import static br.com.api.kalil_studio.URL_Shorter.utils.ConvertBase64.fromBase64;
-import static br.com.api.kalil_studio.URL_Shorter.utils.ValidURL.validURL;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)

@@ -1,12 +1,7 @@
 package br.com.api.kalil_studio.URL_Shorter.utils;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
-
-import java.beans.Encoder;
 import java.math.BigInteger;
-import java.nio.ByteBuffer;
 import java.util.Base64;
-import java.util.stream.Stream;
 
 public class ConvertBase64 {
 

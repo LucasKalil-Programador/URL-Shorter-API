@@ -5,8 +5,6 @@ import br.com.api.kalil_studio.URL_Shorter.dtos.URLDTO;
 import br.com.api.kalil_studio.URL_Shorter.models.URLModel;
 import br.com.api.kalil_studio.URL_Shorter.services.URLService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Positive;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

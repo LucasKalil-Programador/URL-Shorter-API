@@ -1,7 +1,10 @@
 package br.com.api.kalil_studio.URL_Shorter.controllers;
 
 import br.com.api.kalil_studio.URL_Shorter.services.URLService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
 import static br.com.api.kalil_studio.URL_Shorter.utils.ConvertBase64.fromBase64;

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.api.kalil_studio</groupId>
-	<artifactId>URL_Shorter</artifactId>
+	<artifactId>URL-Shorter-API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>URL_Shooter</name>
 	<description>project for Spring Boot</description>
